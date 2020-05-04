@@ -9,7 +9,7 @@ export class ApixuService {
   constructor ( private http: HttpClient ) { }
   getWeather( location ) {
     return this.http.get(
-      'http://api.weatherstack.com/current?access_key=9da02712a30a22374f85d3fd46b51d3c&query='+location
+      'http://api.weatherstack.com/current?access_key=Yours_API_KEY&query='+location
     );
   }
 }
